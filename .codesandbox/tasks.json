@@ -2,29 +2,14 @@
   "setupTasks": [
     {
       "name": "Install Dependencies",
-      "command": "npm install"
+      "command": "pnpm install"
     }
   ],
-  "tasks": {
-    "build": {
-      "name": "build",
-      "command": "yarn build",
+  "tasks": [
+    {
+      "name": "pnpm test",
+      "command": "pnpm test",
       "runAtStart": false
-    },
-    "start": {
-      "name": "start",
-      "command": "yarn start",
-      "runAtStart": true
-    },
-    "test": {
-      "name": "test",
-      "command": "yarn test",
-      "runAtStart": false
-    },
-    "npm test": {
-      "name": "npm test",
-      "command": "npm test",
-      "runAtStart": true
     }
-  }
+  ]
 }
